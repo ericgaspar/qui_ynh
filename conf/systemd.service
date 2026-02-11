@@ -1,5 +1,5 @@
 [Unit]
-Description=Qui:
+Description=Qui: qBittorrent web UI
 After=network.target
 
 [Service]
@@ -7,10 +7,10 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/qui
+ExecStart=__INSTALL_DIR__/qui serve
+StandardOutput=append:/var/log/__APP__/__APP__.log
+StandardError=inherit
 
-### Depending on specificities of your service/app, you may need to tweak these
-### .. but this should be a good baseline
 # Sandboxing options to harden security
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
 NoNewPrivileges=yes

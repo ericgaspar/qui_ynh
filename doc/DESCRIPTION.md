@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+A fast, modern web interface for qBittorrent. Supports managing multiple qBittorrent instances from a single, lightweight application.
